@@ -57,7 +57,7 @@ LIKE:- match pattern in my database
 <=
 ## For example If I write the query:
 This query searches for titles that:
-
+ SELECT title FROM books WHERE title LIKE "The%Love%";
 - Start with **The**
 - Contain **Love** somewhere after **The**
 - Can have any number of characters between **The** and **Love**
@@ -79,7 +79,8 @@ AVG
 MIN
 MAX
 SUM
-
+ROUND
+DISTINCT
 ## Would using MAX with the title column give you the longest book title?
 
 No, using MAX with the title column would give you the “largest” (or in this case, last) title alphabetically. Similarly, MIN will give the first title alphabetically.
