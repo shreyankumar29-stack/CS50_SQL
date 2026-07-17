@@ -5,7 +5,6 @@ A table stores related information in a structured format.
 
 - Each **row** represents one record (item).
 - Each **column** represents one attribute (property) of that record.
-- 
 ## Why Use Databases Instead of Spreadsheets?
 
 1. **Scalability** – Handle millions of records efficiently.
