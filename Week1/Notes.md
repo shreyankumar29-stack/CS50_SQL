@@ -84,3 +84,7 @@ WHERE "id" IN (
         WHERE "name" = 'Fernanda Melchor'
     )   
 );
+
+Note that the innermost query uses = and not the IN operator. This is because we expect to find just one author named Fernanda Melchor.
+
+## JOINS
