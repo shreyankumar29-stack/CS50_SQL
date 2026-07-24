@@ -20,7 +20,7 @@ Fundamental idea in Database that can help us relate tables one to other.
 1. books
    |id |isbn|title|
    |--------------|
-   |1|
-   |2|
-   |3|
-   |4|
+   |1|9788439736967|Boulder|
+   |2|9780525573067|The White Book|
+   |3|9781529414431|Standing Heavy|
+   |4|9781910695432|Flights|
