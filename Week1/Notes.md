@@ -69,3 +69,18 @@ WHERE "publisher_id" =(
 );
 
 The subquery is in parentheses. The query that is furthest inside parantheses will be run first, followed by outer queries.The inner query is indented. This is done as per style conventions for subqueries, to increase readability.
+
+## IN Keyword
+1. This keyword is used to check whether the desired value is in a given list or set of values.
+**Example**
+SELECT "title"
+FROM "books"
+WHERE "id" IN (
+    SELECT "book_id"      
+    FROM "authored"
+    WHERE "author_id" = (
+        SELECT "id"
+        FROM "authors"
+        WHERE "name" = 'Fernanda Melchor'
+    )   
+);
