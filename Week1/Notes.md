@@ -18,7 +18,7 @@ Fundamental idea in Database that can help us relate tables one to other.
 
 **Example:**
 1. books                                        2. ratings 
-   |id |isbn|title|                                 isbn|rating|
+   |id |isbn|title|                                 |isbn|rating|
    |---|----|-----|                                 |-----|------|
    |1|9788439736967|Boulder|                        |9788439736967|4|
    |2|9780525573067|The White Book|                 |9788439736967|3|
