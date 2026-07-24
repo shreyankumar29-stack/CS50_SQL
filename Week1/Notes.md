@@ -153,3 +153,7 @@ After jointing these two tables, the table look likes this:
 |id|name|id|distance|
 |--|----|--|--------|
 |10484|Ayah|10484|1000|
+|11728|Spot|11728|1531|
+|11790|Jolee|11735|2723|
+
+We notice the in the last row the two id's didn't match, we don't no how much Jolee travels. So in this case we can't find matches for any of the two id's, then these id are not the part of joined table anymore.
