@@ -19,6 +19,7 @@ Fundamental idea in Database that can help us relate tables one to other.
 **Example:**
 1. books
    |id |isbn|title|
+   |--------------|
    |1|
    |2|
    |3|
