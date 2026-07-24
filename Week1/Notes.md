@@ -88,3 +88,14 @@ WHERE "id" IN (
 Note that the innermost query uses = and not the IN operator. This is because we expect to find just one author named Fernanda Melchor.
 
 ## JOINS
+This keyword allow us to combine one or more table together.
+**Example**
+1. Sea Lions table
+   |id|name|
+   |---|-----|
+   |10484|Ayah|
+   |11728|Spot|
+   |11729|Tiger|
+   |11732|Mable|
+   |11734|Rick|
+   |11790|Jolee|
