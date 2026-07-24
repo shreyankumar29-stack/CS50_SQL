@@ -89,6 +89,7 @@ Note that the innermost query uses = and not the IN operator. This is because we
 
 ## JOINS
 This keyword allow us to combine one or more table together.
+
 **Example**
 1. Sea Lions table
    |id|name|
