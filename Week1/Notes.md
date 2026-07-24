@@ -116,3 +116,40 @@ This keyword allow us to combine one or more table together.
    |11736|1571|52|
    |11790|1957|92|
    
+sqlite>SELECT * 
+       FROM "sea_lions";
+sqlite>SELECT * 
+       FROM "migrations";
+sqlite>SELECT * 
+       FROM "sea_lions"
+       JOIN "migrations"
+       ON "sea_lions"."id" = "migrations"."id";
+
+
+## INNER JOINS:
+
+
+**Examples:**
+Let's break these two table into smaller parts to analyze data clearly.
+
+sea_lions table
+
+|id|name|
+|---|-----|
+|10484|Ayah|
+|11728|Spot|
+|11790|Jolee|
+
+
+migrations table
+|id|distance|
+|----|------|
+|10484|1000|
+|11728|1531|
+|11735|2723|
+
+After jointing these two tables, the table look likes this:
+
+|id|name|id|distance|
+|--|----|--|--------|
+|10484|Ayah|10484|1000|
