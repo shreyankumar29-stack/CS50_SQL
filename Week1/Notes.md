@@ -45,22 +45,15 @@ Inspired by this idea of an ISBN, we can imagine assigning unique IDs to our pub
     The ISBN, as we can see, is a long identifier. If each character occupied a byte of memory, storing a single ISBN (including the dashes) would take 17 bytes of memory, which is a lot!
     we don’t necessarily have to use the ISBN as a primary key. We can just construct our own using numbers like 1, 2, 3… and so on as long as each book has a unique number to identify it.
 
-## SubQuery: 
-
-One SQL query inside another Query. 
-
+## SubQuery
+One SQL query inside another Query.                    
 **Example**:
-
 SELECT "id" 
-
 FROM "publishers"
-
 WHERE "publisher"='Firtzcarraldo Editions';
 
 SELECT "title" 
-
 FROM "books"
-
 WHERE "publisher_id" = 5;
 
 These two queries are not connected and hence cannot be called as subqueries.
