@@ -48,3 +48,24 @@ Inspired by this idea of an ISBN, we can imagine assigning unique IDs to our pub
 ## SubQuery: 
 One SQL query inside another Query.                    
 **Example**:
+SELECT "id" 
+FROM "publishers"
+WHERE "publisher"='Firtzcarraldo Editions';
+
+SELECT "title" 
+FROM "books"
+WHERE "publisher_id" = 5;
+
+These two queries are not connected and hence cannot be called as subqueries.
+
+Let's combine these queries:
+
+SELECT "title" 
+FROM "books"
+WHERE "publisher_id" =(
+    SELECT "id" 
+    FROM "publishers"
+    WHERE "publisher"='Firtzcarraldo Editions'
+);
+
+The subquery is in parentheses. The query that is furthest inside parantheses will be run first, followed by outer queries.The inner query is indented. This is done as per style conventions for subqueries, to increase readability.
