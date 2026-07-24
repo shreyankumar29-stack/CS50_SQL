@@ -102,4 +102,14 @@ This keyword allow us to combine one or more table together.
    |11790|Jolee|
 
 2. migrations table
+   |id|distance|days|
+   |--|--------|----|
+   |10484|1000|107|
+   |11728|1531|56|
+   |11729|1370|37|
+   |11732|1622|62|
+   |11734|1491|58|
+   |11735|2723|82|
+   |11736|1571|52|
+   |11790|1957|92|
    
