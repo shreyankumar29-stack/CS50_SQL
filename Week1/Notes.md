@@ -28,8 +28,8 @@ Fundamental idea in Database that can help us relate tables one to other.
 in the case of books, every book has a unique identifier called an ISBN. In other words, if you search for a book by its ISBN, only one book will be found. In database terms, the ISBN is a primary key — an identifier that is unique for every item in a table.
 Inspired by this idea of an ISBN, we can imagine assigning unique IDs to our publishers, authors and translators! Each of these IDs would be the primary key of the table it belongs to.                                             
 2. ratings
-    |isbn|rating|                                   
-    |-----|------|                                  
+    |  isbn  |rating|                                   
+    |--------|------|                                  
     |9788439736967|4|                                               
     |9788439736967|3|   
     |9788439736967|5|                                             
