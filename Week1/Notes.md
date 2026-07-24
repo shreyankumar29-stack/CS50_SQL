@@ -19,7 +19,7 @@ Fundamental idea in Database that can help us relate tables one to other.
 **Example:**
 1. books
    |id |isbn|title|
-   |--------------|
+   |---|----|-----|
    |1|9788439736967|Boulder|
    |2|9780525573067|The White Book|
    |3|9781529414431|Standing Heavy|
