@@ -17,17 +17,24 @@ Fundamental idea in Database that can help us relate tables one to other.
 2. Foreign Key: taking a primary key, from one table and including it in the column of some other table.
 
 **Example:**
-1. books                                        2. ratings 
-   |id |isbn|title|                                 |isbn|rating|
-   |---|----|-----|                                 |-----|------|
-   |1|9788439736967|Boulder|                        |9788439736967|4|
-   |2|9780525573067|The White Book|                 |9788439736967|3|
-   |3|9781529414431|Standing Heavy|                 |9788439736967|5|
-   |4|9781910695432|Flights|                        |9780525573067|2|
-                                                    |9780525573067|3|
-                                                    |9781529414431|4|
-                                                    |9781910695432|5|
-                                                    |9781910695432|4|
-                                                    
 
+
+1. books                                         
+   |id |isbn|title|                              
+   |---|----|-----|                                 
+   |1|9788439736967|Boulder|                        
+   |2|9780525573067|The White Book|                 
+   |3|9781529414431|Standing Heavy|                 
+   |4|9781910695432|Flights|                        
                                                     
+2. ratings
+    |isbn|rating|                                   
+    |-----|------|                                  
+    |9788439736967|4|                                               
+    |9788439736967|3|   
+    |9788439736967|5|                                             
+    |9780525573067|2|
+    |9780525573067|3|
+    |9781529414431|4|  
+    |9781910695432|5|              
+    |9781910695432|4|                                
