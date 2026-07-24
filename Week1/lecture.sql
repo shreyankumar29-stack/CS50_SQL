@@ -75,6 +75,6 @@ WHERE "id" IN (
 SELECT * 
        FROM "sea_lions"
        JOIN "migrations"
-       ON "sea_lions"."id" = "migrations"."id";
+       ON "migrations"."id" = "sea_lions"."id";
 
 -- 
