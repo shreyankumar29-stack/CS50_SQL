@@ -91,7 +91,7 @@ Note that the innermost query uses = and not the IN operator. This is because we
 This keyword allow us to combine one or more table together.
 
 **Example**
-1. Sea Lions table
+1. sea lions table
    |id|name|
    |---|-----|
    |10484|Ayah|
@@ -100,3 +100,6 @@ This keyword allow us to combine one or more table together.
    |11732|Mable|
    |11734|Rick|
    |11790|Jolee|
+
+2. migrations table
+   
