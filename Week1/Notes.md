@@ -210,18 +210,21 @@ There is left or right in the Database
    FROM "sea_lions"
    FULL JOIN "migrations"
    ON "migrations"."id" = "sea_lions"."id";
-       
-       |id|name|species|id|distance|days|
-       |--|----|-------|--|--------|----|
-       |10484|Ayah|*Zalophus californianus*|10484|1000|107|
-       |11728|Spot|*Zalophus californianus*|11728|1531|56|
-       |11729|Tiger|*Zalophus californianus*|11729|1370|37|
-       |11732|Mabel|*Zalophus californianus*|11732|1622|62|
-       |11734|Rick|*Zalophus californianus*|11734|1491|58|
-       |11790|Jolee|*Zalophus californianus*|NULL|NULL|NULL|
-       |NULL|NULL|NULL|11735|2723|82|
-       |NULL|NULL|NULL|11736|1571|52|
-       |NULL|NULL|NULL|11737|1957|92|
+       ```text
++-------+--------+-------------------------+-------+----------+------+
+| id    | name   | species                 | id    | distance | days |
++-------+--------+-------------------------+-------+----------+------+
+| 10484 | Ayah   | Zalophus californianus  | 10484 | 1000     | 107  |
+| 11728 | Spot   | Zalophus californianus  | 11728 | 1531     | 56   |
+| 11729 | Tiger  | Zalophus californianus  | 11729 | 1370     | 37   |
+| 11732 | Mabel  | Zalophus californianus  | 11732 | 1622     | 62   |
+| 11734 | Rick   | Zalophus californianus  | 11734 | 1491     | 58   |
+| 11790 | Jolee  | Zalophus californianus  | NULL  | NULL     | NULL |
+| NULL  | NULL   | NULL                    | 11735 | 2723     | 82   |
+| NULL  | NULL   | NULL                    | 11736 | 1571     | 52   |
+| NULL  | NULL   | NULL                    | 11737 | 1957     | 92   |
++-------+--------+-------------------------+-------+----------+------+
+
 
 LEFT JOIN, RIGHT JOIN, FULL JOIN are all part of this family called OUTER JOIN.
 An OUTER JOIN lets us keep some data even if the JOIN is not going to quite work out for us much as ww would want it to in an INNER JOIN. We might have some NULL or empty values in this JOIN after we run it
