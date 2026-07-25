@@ -292,3 +292,12 @@ After RIGHT OUTER JOIN:
 |11790|Jolee|NULL|NULL|
 |NULL|NULL|11735|2723|
 
+We see here that the Jolee Doesn't have the distance travelled in the right table.
+
+**After Deleting:**
+
+|id|name|id|distance|
+|---|-----|--|------|
+|10484|Ayah|10484|1000|
+|11728|Spot|11728|1531|
+|NULL|NULL|11735|2723|
