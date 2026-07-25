@@ -197,5 +197,7 @@ There is left or right in the Database
 | NULL | NULL | NULL | 11736 | 1571 | 52 |
 | NULL | NULL | NULL | 11737 | 1957 | 92 |
 
+--> We've actually left of sea_lions. We only have those whose id's were in the right table. Again we've don't have names for these sea_lions we still include in our data set
+
 LEFT JOIN, RIGHT JOIN, FULL JOIN are all part of this family called OUTER JOIN.
 An OUTER JOIN lets us keep some data even if the JOIN is not going to quite work out for us much as ww would want it to in an INNER JOIN. We might have some NULL or empty values in this JOIN after we run it
