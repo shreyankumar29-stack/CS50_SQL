@@ -245,3 +245,12 @@ There is left or right in the Database
 |10484|1000|
 |11728|1531|
 |11735|2723|
+
+After LEFT OUTER JOIN:
+
+|id|name|id|distance|
+|---|-----|--|------|
+|10484|Ayah|10484|1000|
+|11728|Spot|11728|1531|
+|11790|Jolee|NULL|NULL|
+|NULL|NULL|11735|2723|
