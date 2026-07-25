@@ -155,7 +155,8 @@ Let's compare the rows from both tables:
 |10484|Ayah|10484|1000|
 |11728|Spot|11728|1531|
 
-**Explaination:**We notice that the last row does not have matching IDs.
+**Explaination:**
+We notice that the last row does not have matching IDs.
 
 - Jolee has id = 11790, but this id does not exist in the migrations table.
 - The migrations table contains id = 11735, but this id does not exist in the sea_lions table.
