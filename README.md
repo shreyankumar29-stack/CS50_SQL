@@ -184,4 +184,3 @@ This repository is maintained while studying **CS50's Introduction to Databases 
 All official course content, lectures, and problem sets belong to **Harvard University** and the **CS50 Team**.
 
 This repository contains only my own notes, practice work, and learning progress.
-
