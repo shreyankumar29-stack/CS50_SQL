@@ -211,7 +211,6 @@ There is left or right in the Database
    FULL JOIN "migrations"
    ON "migrations"."id" = "sea_lions"."id";
 
-       ### Example
 
 | id | name | species | id | distance | days |
 |---:|------|---------|---:|---------:|----:|
