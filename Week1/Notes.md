@@ -254,3 +254,15 @@ After LEFT OUTER JOIN:
 |11728|Spot|11728|1531|
 |11790|Jolee|NULL|NULL|
 |NULL|NULL|11735|2723|
+
+We will prioritize left side of table as data set even if it doesn't have any match, will keep this row here.
+
+**NOTICE:** this id doesn't match in thee left table,wwill omit that and delete this bootom row and we left with Jolee who might or may not have the data in the right table.
+
+**After Deleting:**
+
+|id|name|id|distance|
+|---|-----|--|------|
+|10484|Ayah|10484|1000|
+|11728|Spot|11728|1531|
+|11790|Jolee|NULL|NULL|
