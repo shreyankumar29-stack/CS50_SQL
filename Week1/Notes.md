@@ -209,7 +209,7 @@ There is left or right in the Database
    ON "migrations"."id" = "sea_lions"."id";
        
        |id|name|species|id|distance|days|
-       |---:|------|---------|---:|---------:|----:|
+       |----|------|---------|----|----------|----|
        |10484|Ayah|*Zalophus californianus*|10484|1000|107|
        |11728|Spot|*Zalophus californianus*|11728|1531|56|
        |11729|Tiger|*Zalophus californianus*|11729|1370|37|
