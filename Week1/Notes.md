@@ -206,10 +206,10 @@ There is left or right in the Database
 
 1. FULL JOIN: allow us to allows us to see the entirety of both tables and which values are missing.
    
-   SELECT * 
-   FROM "sea_lions"
-   FULL JOIN "migrations"
-   ON "migrations"."id" = "sea_lions"."id";
+       SELECT * 
+       FROM "sea_lions"
+       FULL JOIN "migrations"
+       ON "migrations"."id" = "sea_lions"."id";
 
 
 | id | name | species | id | distance | days |
