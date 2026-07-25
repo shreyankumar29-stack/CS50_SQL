@@ -362,3 +362,90 @@ We didn't get the duplicate id column too
 2. INTERSECT
 3. EXCEPT
    
+## GROUP BY
+GROUP BY collects all rows with the same value in the specified column into a single group.
+
+## Why can't we use the WHERE clause with Aggregate Functions?
+
+The `WHERE` clause filters **individual rows** before the `GROUP BY` clause is executed.
+
+Aggregate functions such as:
+
+- `COUNT()`
+- `SUM()`
+- `AVG()`
+- `MIN()`
+- `MAX()`
+
+are calculated **after** the rows have been grouped.
+
+Since `WHERE` executes before `GROUP BY`, it does not know the result of aggregate functions. Therefore, aggregate functions **cannot** be used inside the `WHERE` clause.
+
+---
+
+## SQL Execution Order
+
+```text
+1. FROM
+       ↓
+2. WHERE
+       ↓
+3. GROUP BY
+       ↓
+4. Aggregate Functions (COUNT, SUM, AVG, MIN, MAX...)
+       ↓
+5. HAVING
+       ↓
+6. SELECT
+       ↓
+7. ORDER BY
+```
+
+Notice that **`WHERE` executes before `GROUP BY`**, so aggregate functions have not been calculated yet.
+
+---
+
+## Why do we use HAVING?
+
+The `HAVING` clause filters **groups**, not individual rows.
+
+It executes **after** `GROUP BY`, when aggregate functions have already been calculated.
+
+Therefore, `HAVING` can use aggregate functions like `COUNT()`, `SUM()`, `AVG()`, `MIN()`, and `MAX()`.
+
+---
+
+## Difference Between WHERE and HAVING
+
+| WHERE | HAVING |
+|--------|---------|
+| Filters individual rows | Filters groups |
+| Executes before `GROUP BY` | Executes after `GROUP BY` |
+| Cannot use aggregate functions | Can use aggregate functions |
+| Used before grouping | Used after grouping |
+
+---
+
+## Easy Trick to Remember
+
+```text
+WHERE
+      ↓
+Filters Rows
+
+GROUP BY
+      ↓
+Creates Groups
+
+HAVING
+      ↓
+Filters Groups
+```
+
+---
+
+## Remember
+
+- Use **`WHERE`** to filter **individual rows**.
+- Use **`HAVING`** to filter **groups** created by `GROUP BY`.
+- If your condition uses an aggregate function (`COUNT()`, `SUM()`, `AVG()`, `MIN()`, or `MAX()`), use **`HAVING`** instead of **`WHERE`**.
