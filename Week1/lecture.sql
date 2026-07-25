@@ -140,3 +140,5 @@ FROM "ratings"
 GROUP BY "book_id"
 HAVING "average rating" > 4.0
 ORDER BY "average rating" DESC;
+
+
