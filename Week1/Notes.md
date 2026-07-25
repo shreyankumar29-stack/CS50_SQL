@@ -283,7 +283,7 @@ We will prioritize left side of table as data set even if it doesn't have any ma
 |11728|1531|
 |11735|2723|
 
-After LEFT OUTER JOIN:
+After RIGHT OUTER JOIN:
 
 |id|name|id|distance|
 |---|-----|--|------|
