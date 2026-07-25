@@ -224,5 +224,24 @@ There is left or right in the Database
 | NULL | NULL | NULL | 11736 | 1571 | 52 |
 | NULL | NULL | NULL | 11737 | 1957 | 92 |
 
-LEFT JOIN, RIGHT JOIN, FULL JOIN are all part of this family called OUTER JOIN.
-An OUTER JOIN lets us keep some data even if the JOIN is not going to quite work out for us much as ww would want it to in an INNER JOIN. We might have some NULL or empty values in this JOIN after we run it
+--> We see both table in entirety. We have Jolee here still Jolee doesn't have number of days or distance.
+
+## Note:
+1. LEFT JOIN, RIGHT JOIN, FULL JOIN are all part of this family called OUTER JOIN.
+2. An OUTER JOIN lets us keep some data even if the JOIN is not going to quite work out for us much as ww would want it to in an INNER JOIN. We might have some NULL or empty values in this JOIN after we run it.
+   
+## FULL OUTER JOIN
+
+**Example:**
+
+|id|name|
+|---|-----|
+|10484|Ayah|
+|11728|Spot|
+|11790|Jolee|
+
+|id|distance|
+|----|--------|
+|10484|1000|
+|11728|1531|
+|11735|2723|
