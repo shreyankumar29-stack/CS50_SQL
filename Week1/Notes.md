@@ -210,7 +210,9 @@ There is left or right in the Database
    FROM "sea_lions"
    FULL JOIN "migrations"
    ON "migrations"."id" = "sea_lions"."id";
-       ```text
+
+
+
 +-------+--------+-------------------------+-------+----------+------+
 | id    | name   | species                 | id    | distance | days |
 +-------+--------+-------------------------+-------+----------+------+
