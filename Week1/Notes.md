@@ -230,7 +230,7 @@ There is left or right in the Database
 1. LEFT JOIN, RIGHT JOIN, FULL JOIN are all part of this family called OUTER JOIN.
 2. An OUTER JOIN lets us keep some data even if the JOIN is not going to quite work out for us much as ww would want it to in an INNER JOIN. We might have some NULL or empty values in this JOIN after we run it.
    
-## FULL OUTER JOIN
+## LEFT OUTER JOIN
 
 **Example:**
 
@@ -246,7 +246,7 @@ There is left or right in the Database
 |11728|1531|
 |11735|2723|
 
-After LEFT OUTER JOIN:
+If we consider rows from both tables:
 
 |id|name|id|distance|
 |---|-----|--|------|
@@ -257,15 +257,24 @@ After LEFT OUTER JOIN:
 
 We will prioritize left side of table as data set even if it doesn't have any match, will keep this row here.
 
-**NOTICE:** this id doesn't match in thee left table,wwill omit that and delete this bootom row and we left with Jolee who might or may not have the data in the right table.
+**NOTICE:**
 
-**After Deleting:**
+The last row belongs only to the right table (`id = 11735`).
+
+Since LEFT OUTER JOIN prioritizes the left table, this row will not appear in the final result.
+
+Jolee remains in the result even though there is no matching row in the right table.
+
+**After LEFT OUTER JOIN**
 
 |id|name|id|distance|
 |---|-----|--|------|
 |10484|Ayah|10484|1000|
 |11728|Spot|11728|1531|
 |11790|Jolee|NULL|NULL|
+
+**NOTE:**
+LEFT OUTER JOIN returns all rows from the left table. If a matching row exists in the right table, the data is combined. Otherwise, the columns from the right table are filled with NULL.
 
 ## RIGHT OUTER JOIN
 
@@ -283,7 +292,7 @@ We will prioritize left side of table as data set even if it doesn't have any ma
 |11728|1531|
 |11735|2723|
 
-After RIGHT OUTER JOIN:
+If we consider rows from both tables:
 
 |id|name|id|distance|
 |---|-----|--|------|
@@ -292,12 +301,24 @@ After RIGHT OUTER JOIN:
 |11790|Jolee|NULL|NULL|
 |NULL|NULL|11735|2723|
 
-We see here that the Jolee Doesn't have the distance travelled in the right table.
+Jolee exists only in the left table and has no matching record in the right table. Since RIGHT OUTER JOIN prioritizes the right table, Jolee will not appear in the final result.
 
-**After Deleting:**
+**After RIGHT OUTER JOIN**
 
 |id|name|id|distance|
 |---|-----|--|------|
 |10484|Ayah|10484|1000|
 |11728|Spot|11728|1531|
 |NULL|NULL|11735|2723|
+
+**NOTE:**
+RIGHT OUTER JOIN returns all rows from the right table. Matching rows from the left table are included. If there is no matching row in the left table, the left table columns are filled with NULL.
+
+### Remember
+
+- LEFT JOIN → Keep everything from the left table.
+- RIGHT JOIN → Keep everything from the right table.
+- INNER JOIN → Keep only matching rows.
+- FULL OUTER JOIN → Keep everything from both tables.
+
+
