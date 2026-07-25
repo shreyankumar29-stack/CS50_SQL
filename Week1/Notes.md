@@ -90,6 +90,10 @@ WHERE "id" IN (
 
 Note that the innermost query uses = and not the IN operator. This is because we expect to find just one author named Fernanda Melchor.
 
+
+**NOTE: From here we're using the sea_lions database**
+
+
 ## JOINS
 This keyword allow us to combine one or more table together.
 
@@ -330,3 +334,21 @@ RIGHT OUTER JOIN returns all rows from the right table. Matching rows from the l
 
 ## NATURAL JOINS
 
+A NATURAL JOIN automatically joins two tables based on all columns that have the same name.
+
+**Example:**
+
+SELECT * 
+FROM "sea_lions"
+NATURAL JOIN "migrations";
+
+**Notice:**
+We didn't get the duplicate id column too
+
+|id|name|species|distance|days|
+|---|-----|-------|-------|----|
+|10484|Ayah|Zalophus californianus|1000|107|
+|11728|Spot|Zalophus californianus|1531|56|
+|11729|Tiger|Zalophus californianus|1370|37|
+|11732|Mable|Zalophus californianus|1622|62|
+|11734|Rick|Zalophus californianus|1491|58|
