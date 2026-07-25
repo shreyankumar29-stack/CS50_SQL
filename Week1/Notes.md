@@ -166,6 +166,7 @@ There is left or right in the Database
 **Examples:**
 
 1. LEFT JOIN
+   
        SELECT * 
        FROM "sea_lions"
        LEFT JOIN "migrations"
@@ -183,6 +184,7 @@ There is left or right in the Database
 --> Jolee doesn't have a distance or a number of days. We actually haven't tracked data yet for Jolee but we still see them in table.
 
 1. RIGHT JOIN
+   
        SELECT * 
        FROM "sea_lions"
        RIGHT JOIN "migrations"
@@ -202,7 +204,8 @@ There is left or right in the Database
 
 --> We've actually left of sea_lions. We only have those whose id's were in the right table. Again we've don't have names for these sea_lions we still include in our data set. And we can see that we have sone data missing and it has some special value called NULL.
 
-3. FULL JOIN: allow us to allows us to see the entirety of both tables and which values are missing.
+1. FULL JOIN: allow us to allows us to see the entirety of both tables and which values are missing.
+   
    SELECT * 
    FROM "sea_lions"
    FULL JOIN "migrations"
