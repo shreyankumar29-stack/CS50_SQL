@@ -140,23 +140,28 @@ sea_lions table
 |11728|Spot|
 |11790|Jolee|
 
-
 migrations table
+
 |id|distance|
 |----|------|
 |10484|1000|
 |11728|1531|
 |11735|2723|
 
-After jointing these two tables, the table look likes this:
+Let's compare the rows from both tables:
 
 |id|name|id|distance|
 |--|----|--|--------|
 |10484|Ayah|10484|1000|
 |11728|Spot|11728|1531|
-|11790|Jolee|11735|2723|
 
-We notice the in the last row the two id's didn't match, we don't no how much Jolee travels. So in this case we can't find matches for any of the two id's, then these id are not the part of joined table anymore.
+**Explaination:**We notice that the last row does not have matching IDs.
+
+- Jolee has id = 11790, but this id does not exist in the migrations table.
+- The migrations table contains id = 11735, but this id does not exist in the sea_lions table.
+
+Since INNER JOIN returns only matching rows, both of these rows are excluded from the final result.
+
 
 ## Note:
 There is left or right in the Database
@@ -321,4 +326,6 @@ RIGHT OUTER JOIN returns all rows from the right table. Matching rows from the l
 - INNER JOIN → Keep only matching rows.
 - FULL OUTER JOIN → Keep everything from both tables.
 
+
+## NATURAL JOINS
 
