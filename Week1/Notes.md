@@ -352,3 +352,13 @@ We didn't get the duplicate id column too
 |11729|Tiger|Zalophus californianus|1370|37|
 |11732|Mable|Zalophus californianus|1622|62|
 |11734|Rick|Zalophus californianus|1491|58|
+
+
+**NOTE: Writing SETS queries in longlist.db**
+
+## SETS
+
+1. UNION
+2. INTERSECT
+3. EXCEPT
+   
