@@ -119,3 +119,8 @@ SELECT COUNT("publisher") FROM "longlist";
 
 -- Find all th distinct publishers fro  the datasets
 SELECT COUNT(DISTINCT "publisher") FROM "longlist";
+
+-- print first five rows 
+SELECT "author, "title"
+FROM "longlist"
+LIMIT 5;
