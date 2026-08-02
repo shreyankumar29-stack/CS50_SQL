@@ -50,6 +50,7 @@ Five types of Storage Class:-
 **Example:**
 
 **INTEGER**
+
 0-BYTES
 
 1-BYTES
