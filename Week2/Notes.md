@@ -1,5 +1,7 @@
-# Normalizing: 
-To reduce redundancy
+
+# Normalization
+
+Normalization is the process of organizing data to reduce redundancy and improve data integrity.
 
 **Example:**
 
@@ -42,12 +44,13 @@ CREATE TABLE "riders" (
 # Data Types and Storage Class:
 Five types of Storage Class:-
 1. NULL-No data
-2. INTEGER- A whole numbers(from 0 to infinity)
-3. REAL- decimal or floating point numbers
-4. TEXT- Characters
-5. BLOB- Binary Large Object
+2. INTEGER - Whole numbers (positive, negative, or zero)
+3. REAL - Decimal (floating-point) numbers
+4. TEXT - Text or character strings
+5. BLOB - Binary Large Object (images, files, videos, etc.)
    
-**NOTE-** Data Types and Storage Class are very similar but Distinct ID'S.
+**NOTE:** Data Types and Storage Classes are very similar but have distinct meanings in SQLite.
+
 **Example:**
 
 **INTEGER**
@@ -66,10 +69,8 @@ Five types of Storage Class:-
 
 8-BYTES
 
-
-# Type Affinities:
-try to convert some values we insert into a given cell or given row to the type they have the affinity for.
-
+# Type Affinities
+SQLite tries to convert inserted values to the storage class that matches the column's type affinity whenever possible.
 
 1. INTEGER- A whole numbers(from 0 to infinity)
 2. REAL- decimal or floating point numbers
@@ -78,14 +79,115 @@ try to convert some values we insert into a given cell or given row to the type 
 5. NUMERIC- an integer or real value
 
 # DROP TABLE:
-deleting the table permanently
+Deletes a table and all of its data permanently.
 
-<sqlite>.quit
-In root directory type code schema.sql
+## Creating a Database Schema (`schema.sql`)
 
-A file created in the folder and write queries and thereafter write
+Instead of creating tables one by one inside the SQLite terminal, we can write all `CREATE TABLE` statements inside a separate file called `schema.sql`.
 
+### Why use `schema.sql`?
 
--- Database can read the data from schema.sql file
-<sqlite>.read schema.sql 
+- Keeps the database structure organized.
+- Makes the schema easy to read and modify.
+- Allows us to recreate the entire database whenever needed.
+- Common practice in real-world database development.
 
+---
+
+## Creating the `visits` Table
+
+The `visits` table stores the relationship between riders and stations.
+
+```sql
+CREATE TABLE "visits" (
+    "rider_id" INTEGER,
+    "station_id" INTEGER
+);
+```
+
+### Explanation
+
+- `rider_id` stores the ID of a rider.
+- `station_id` stores the ID of a station.
+- Both columns use the `INTEGER` type because they reference IDs from other tables.
+
+---
+
+## Database Schema
+
+After creating all three tables, the database schema consists of:
+
+- `riders`
+- `stations`
+- `visits`
+
+Together, these tables define the overall structure of the MBTA database.
+
+---
+
+## Applying the Schema to the Database
+
+After writing all the `CREATE TABLE` statements in `schema.sql`, we need to execute them inside our database.
+
+Open the database:
+
+```bash
+sqlite3 mbta.db
+```
+
+Read and execute the SQL commands from the file:
+
+```sql
+.read schema.sql
+```
+
+The `.read` command executes every SQL statement stored in the specified file.
+
+---
+
+## Verify the Schema
+
+To check whether the tables were created successfully:
+
+```sql
+.schema
+```
+
+This displays the complete database schema, including all tables.
+
+---
+
+## Advantages of Using `schema.sql`
+
+- Create multiple tables at once.
+- Easily recreate the database if it is deleted.
+- Modify the schema without retyping every command.
+- Keep database structure separate from SQL queries.
+
+---
+
+## Remember
+
+```text
+schema.sql
+      ↓
+Stores the database structure
+      ↓
+CREATE TABLE statements
+      ↓
+.read schema.sql
+      ↓
+Creates all tables inside the database
+```
+
+---
+
+## Key Commands
+
+```bash
+sqlite3 mbta.db      # Open the database
+
+.read schema.sql     # Execute all SQL commands in schema.sql
+
+.schema              # Display the database schema
+```
