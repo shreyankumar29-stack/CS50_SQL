@@ -29,3 +29,19 @@ We now need to decide how our entities (riders and stations) are related.
 **Example:**
 ![alt text](image.png)
 ![alt text](image-1.png)
+
+# CREATE TABLE:
+Createing a brand new table.
+
+**Example:**
+CREATE TABLE "riders" (
+    "id",
+    "name"
+);
+
+# Data Types and Storage Class:
+Five types of Storage Class:-
+1. NULL-No data
+2. INTEGER- A whole numbers(from 0 to infinity)
+3. REAL- decimal or floating point numbers
+4. TEXT- 
