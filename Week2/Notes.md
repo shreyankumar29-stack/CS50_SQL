@@ -28,3 +28,4 @@ We now need to decide how our entities (riders and stations) are related.
 
 **Example:**
 ![alt text](image.png)
+![alt text](image-1.png)
