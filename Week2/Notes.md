@@ -44,4 +44,21 @@ Five types of Storage Class:-
 1. NULL-No data
 2. INTEGER- A whole numbers(from 0 to infinity)
 3. REAL- decimal or floating point numbers
-4. TEXT- 
+4. TEXT- Characters
+5. BLOB- Binary Large Object
+   
+**Example:**
+
+**INTEGER**
+0-BYTES
+1-BYTES
+2-BYTES
+3-BYTES
+4-BYTES
+6-BYTES
+8-BYTES
+
+
+# Type Affinities:
+try to convert some values we insert into a given cell or given row to the type they have the affinity for.
+
