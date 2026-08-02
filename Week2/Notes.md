@@ -51,11 +51,17 @@ Five types of Storage Class:-
 
 **INTEGER**
 0-BYTES
+
 1-BYTES
+
 2-BYTES
+
 3-BYTES
+
 4-BYTES
+
 6-BYTES
+
 8-BYTES
 
 
