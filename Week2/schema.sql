@@ -19,5 +19,8 @@ CREATE TABLE "visits" (
     FOREIGN KEY("rider_id") REFERENCES "riders"("id"),
     FOREIGN KEY("station_id") REFERENCES "stations"("id")
 );
+ALTER TABLE "visits" RENAME TO "swipes";
 
+DROP TABLE "riders";
 
+ALTER TABLE 
