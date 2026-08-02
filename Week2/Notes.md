@@ -26,5 +26,5 @@ stations
 # Relating
 We now need to decide how our entities (riders and stations) are related.
 
-**Example**
-
+**Example:**
+![alt text](image.png)
