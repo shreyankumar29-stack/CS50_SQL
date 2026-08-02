@@ -31,7 +31,7 @@ We now need to decide how our entities (riders and stations) are related.
 ![alt text](image-1.png)
 
 # CREATE TABLE:
-Createing a brand new table.
+Creating a brand new table.
 
 **Example:**
 CREATE TABLE "riders" (
@@ -47,6 +47,7 @@ Five types of Storage Class:-
 4. TEXT- Characters
 5. BLOB- Binary Large Object
    
+**NOTE-** Data Types and Storage Class are very similar but Distinct ID'S.
 **Example:**
 
 **INTEGER**
@@ -68,4 +69,23 @@ Five types of Storage Class:-
 
 # Type Affinities:
 try to convert some values we insert into a given cell or given row to the type they have the affinity for.
+
+
+1. INTEGER- A whole numbers(from 0 to infinity)
+2. REAL- decimal or floating point numbers
+3. TEXT- Characters
+4. BLOB- Binary Large Object
+5. NUMERIC- an integer or real value
+
+# DROP TABLE:
+deleting the table permanently
+
+<sqlite>.quit
+In root directory type code schema.sql
+
+A file created in the folder and write queries and thereafter write
+
+
+-- Database can read the data from schema.sql file
+<sqlite>.read schema.sql 
 
