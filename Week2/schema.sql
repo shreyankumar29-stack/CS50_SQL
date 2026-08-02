@@ -1,4 +1,4 @@
-CREATE TABLE    "riders" (
+CREATE TABLE "riders" (
     "id" INTEGER NOT NULL,
     "name" TEXT,
     PRIMARY KEY ("id")
@@ -11,7 +11,7 @@ CREATE TABLE "stations" (
     PRIMARY KEY ("id")
 );
 
-CREATE TABLE "visits" (
+CREATE TABLE "swipes" (
     "id" INTEGER,
     "rider_id" INTEGER NOT NULL,
     "station_id" INTEGER NOT NULL,
@@ -23,4 +23,8 @@ ALTER TABLE "visits" RENAME TO "swipes";
 
 DROP TABLE "riders";
 
-ALTER TABLE 
+ALTER TABLE "swipes" ADD COLUMN "ttpe" TEXT;
+
+ALTER TABLE "swipes" RENAME COLUMN "ttpe" TO "type";
+
+ALTER TABLE "swipes" DROP COLUMN "type";
