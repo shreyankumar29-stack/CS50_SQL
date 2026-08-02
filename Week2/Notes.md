@@ -1,4 +1,5 @@
-# Normalizing: To reduce redundancy
+# Normalizing: 
+To reduce redundancy
 
 **Example:**
 
