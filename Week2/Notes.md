@@ -19,11 +19,14 @@ stations
 |2|MIT|
 |3|Park Street|
 
+---
+
 # Types of Normal Forms:
 1. FIRST NORMAL FORM
 2. SECOND NORMAL FORM
 3. THIRD NORMAL FORM
 
+---
 
 # Relating
 We now need to decide how our entities (riders and stations) are related.
@@ -32,6 +35,7 @@ We now need to decide how our entities (riders and stations) are related.
 ![alt text](image.png)
 ![alt text](image-1.png)
 
+---
 # CREATE TABLE:
 Creating a brand new table.
 
@@ -40,6 +44,8 @@ CREATE TABLE "riders" (
     "id",
     "name"
 );
+
+---
 
 # Data Types and Storage Class:
 Five types of Storage Class:-
@@ -69,6 +75,8 @@ Five types of Storage Class:-
 
 8-BYTES
 
+---
+
 # Type Affinities
 SQLite tries to convert inserted values to the storage class that matches the column's type affinity whenever possible.
 
@@ -78,8 +86,12 @@ SQLite tries to convert inserted values to the storage class that matches the co
 4. BLOB- Binary Large Object
 5. NUMERIC- an integer or real value
 
+---
+
 # DROP TABLE:
 Deletes a table and all of its data permanently.
+
+---
 
 ## Creating a Database Schema (`schema.sql`)
 
