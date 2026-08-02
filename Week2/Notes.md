@@ -203,3 +203,19 @@ sqlite3 mbta.db      # Open the database
 
 .schema              # Display the database schema
 ```
+---
+
+# Table Constraints:
+A constraint means that some values have to be a certain way.
+
+---
+
+# COLUMN CONSTRAINTS
+NOT NULL
+
+DEFAULT
+
+UNIQUE
+
+CHECK
+
