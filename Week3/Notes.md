@@ -24,7 +24,7 @@ INSERT INTO "collections"("title","accession_number","acquired) VALUES (NULL, NU
 
 # Reason why this won't work
 
-When we try to execute this query in SQL it won't be execute as we have already specified that "title" and "accession_number" as NOT NULL.
+When we try to execute this query in SQL it won't be execute as we have already specified that "title" and "accession_number" as NOT NULL in our schema.
 
 ---
 
