@@ -4,11 +4,11 @@ CREATE, READ, UPDATE, DELETE, INSERT
 
 ## Example: Inserting values for Meuseum of Fine Arts
 
-INSERT INTO museum(title,accession_number,acquired) VALUES('Profusion of flowers','56.257','1956-04-01');
+INSERT INTO collections(title,accession_number,acquired) VALUES('Profusion of flowers','56.257','1956-04-01');
 
-INSERT INTO museum(title,accession_number,acquired) VALUES('Farmers working at down','11.6152','1911-08-03');
+INSERT INTO collections(title,accession_number,acquired) VALUES('Farmers working at down','11.6152','1911-08-03');
 
-INSERT INTO museum(title,accession_number,acquired) VALUES('Spring Outing','14.76','1941-01-08');
+INSERT INTO collections(title,accession_number,acquired) VALUES('Spring Outing','14.76','1941-01-08');
 
 
 |id|title|accession_number|acquired|
@@ -68,3 +68,8 @@ Using sqlite command **.import**.
 
 ## DELETE
 
+**To delete single row or data from the table:** DELETE FROM table WHERE condition;
+
+## FOREIGN KEY CONSTRAINTS
+
+that have some table with a primary key is referenced by some other table.
