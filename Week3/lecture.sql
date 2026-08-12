@@ -42,3 +42,20 @@ VALUES
 ((SELECT "id" FROM "artists" WHERE "name" = 'Qian Weicheng'), (SELECT "id" FROM "collections" WHERE "title" = 'Profusion of flowers')),
 ((SELECT "id" FROM "artists" WHERE "name" = 'Unidentified artist'), (SELECT "id" FROM "collections" WHERE "title" = 'Farmers working at dawn')),
 ((SELECT "id" FROM "artists" WHERE "name" = 'Zhou Chen'), (SELECT "id" FROM "collections" WHERE "title" = 'Spring outing'));
+
+
+SELECT "title", COUNT("title") FROM "votes" GROUP BY "title";
+
+UPDATE "votes" SET "title" = trim("title");
+
+UPDATE "votes" SET "title" = upper("title");
+
+SELECT "title", COUNT("title") FROM "votes" GROUP BY "title";
+
+UPDATE "votes" SET "title" = 'FARMERS WORKING AT DAWN' WHERE "title" = 'FARMERS WORKING AT DAWN';
+
+UPDATE "votes" SET "title" = 'FARMERS WORKING AT DAWN'
+WHERE "title" LIKE 'Fa%' ;
+
+UPDATE "votes" SET "title" = 'FARMERS WORKING AT DAWN'
+WHERE "title" LIKE 'Fa%' ;

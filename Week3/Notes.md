@@ -337,9 +337,13 @@ ON DELETE CASCADE
 
 `SET NULL` and `SET DEFAULT` do not mean that the parent row is kept. The **parent row is deleted**, and the foreign-key value in the child table is changed according to the specified action.
 
-### UPDATE 
+### UPDATE
 
-UPDATE table 
+`UPDATE` is used to modify existing data in a table.
+
+**SYNTAX:**
+
+```sql
+UPDATE table
 SET column0 = value0, ...
 WHERE condition;
-
