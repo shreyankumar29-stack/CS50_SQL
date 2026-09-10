@@ -142,3 +142,5 @@ HAVING "average rating" > 4.0
 ORDER BY "average rating" DESC;
 
 
+SELECT "id" FROM "authors"
+WHERE "name" = 'Fernanda Melchor';
